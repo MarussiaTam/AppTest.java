@@ -22,7 +22,7 @@ public class YandexWeather {
         inputSearch.sendKeys("Пермь");
 
         WebDriverWait webDriverWait = new WebDriverWait(webDriver, Duration.ofSeconds(5));
-
+        Thread.sleep(5000);
         webDriver.findElement(By.xpath("//a[.='Пермь']")).click();
 
         Thread.sleep(5000);

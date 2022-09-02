@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d01704-4aad-4d0d-9dbe-6f5abc162180" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/AfishaExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/DiaryExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/SeleniumStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/SetupBrowserExamples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/YandexMaps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/YandexWeather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
+    <list default="true" id="e7d01704-4aad-4d0d-9dbe-6f5abc162180" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/Scaner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/SquareTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson3/YandexWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson3/YandexWeather.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,15 +62,19 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Марина/IdeaProjects/AppTest.java&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="lesson3" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Марина\IdeaProjects\GBFirst\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.YandexMaps">
+  <component name="RunManager" selected="Application.SquareTriangle">
     <configuration name="AfishaExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson3.AfishaExample" />
       <module name="GBFirst" />
@@ -113,9 +114,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetupBrowserExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson3.SetupBrowserExamples" />
-      <module name="GBFirst" />
+    <configuration name="SquareTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson3.SquareTriangle" />
+      <module name="AppTest.java" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lesson3.*" />
@@ -154,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SquareTriangle" />
         <item itemvalue="Application.YandexMaps" />
         <item itemvalue="Application.YandexWeather" />
         <item itemvalue="Application.DiaryExample" />
         <item itemvalue="Application.AfishaExample" />
-        <item itemvalue="Application.SetupBrowserExamples" />
       </list>
     </recent_temporary>
   </component>
@@ -171,6 +172,21 @@
       <option name="presentableId" value="Default" />
       <updated>1661421810736</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1662104200713</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662104200713</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1662104312995</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662104312995</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,5 +211,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>
