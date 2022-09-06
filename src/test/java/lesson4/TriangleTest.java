@@ -1,10 +1,10 @@
 package lesson4;
 
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.jupiter.params.provider.ValueSource;
 
 public class TriangleTest {
 
@@ -24,14 +24,9 @@ public class TriangleTest {
     @CsvSource(value = {"5, 5, 5", "0, 0, 0"})
     void isTriangleTest1(int arg) {
         boolean result = new Triangle().isTriangle(arg, arg, arg);
-        Assertions.assertEquals(true, result);
+        Assertions.assertEquals(true, result, String.valueOf(0));
         //здесь (вероятно где-то ошибка) всегда тест проходит, хоть true, хоть false
     }
+
+
 }
-
-
-
-
-
-
-
