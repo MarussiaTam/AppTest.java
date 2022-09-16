@@ -6,13 +6,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.function.BooleanSupplier;
 
-public class YandexMapTest {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class GoogleTest {
+
     WebDriver driver;
     WebDriverWait webDriverWait;
     Actions actions;
@@ -31,22 +32,22 @@ public class YandexMapTest {
 
     @Test
     void searchPlacesTest() throws InterruptedException {
-        driver.get("https://yandex.ru/maps/50/perm/?ll=56.229398%2C58.010374&z=12");
-        webDriverWait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//input"))));
-        actions.moveToElement(driver.findElement(By.xpath("//input")))
-                .click()
-                .sendKeys("Сибирская, 50")
-                .click()
-                .perform();
-        webDriverWait.until(d -> d.findElement(By.xpath("//input")).getAttribute("value").contains("Сибирская, 50"));
-        Assertions.assertTrue(driver.findElement(By.xpath("//input[@value=\"Сибирская, 50\"]")).isDisplayed());
+        driver.get("https://www.google.com/");
+        actions.scrollToElement(driver.findElement(By.xpath("//div[@jsname=\"LgbsSe\"]")))
+               .click()
+               .perform();
+        actions.moveToElement(driver.findElement(By.xpath("//*[contains(text(), 'Тёмная тема')]"))).click();
 
+        Assertions.assertEquals(driver.findElement(By.xpath("//*[contains(text(), 'Тёмная тема')]")), "Тёмная ночь");
 
     }
+
+
     @AfterEach
     void tearDown() {
         driver.quit();
     }
+
 
 
 }
