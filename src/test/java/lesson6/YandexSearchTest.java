@@ -1,10 +1,10 @@
 package lesson6;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import lesson6.lesson6.MainPage;
+import lesson6.lesson6.SearchPage;
+import lesson6.lesson6.CheckResultBlock;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -25,7 +25,8 @@ public class YandexSearchTest {
         driver.get("https://ya.ru");
         new MainPage(driver).clickSearchLine();
         new SearchPage(driver).searchPhrase("Как сделать домашку?");
-    }
+        new CheckResultBlock(driver);
+            }
 
     @AfterEach
     void tearDown() {
